@@ -1,3 +1,4 @@
+html { background-color: #333;}
 html,
 body {
   padding: 0;
@@ -13,4 +14,25 @@ a {
 
 * {
   box-sizing: border-box;
+  color: #f2f2f2;
+}
+.card {
+  font-size: 16px;
+  padding:0.5rem 1.5rem 0.5rem 0;
+  width: 50%;
+}
+h3 {
+  margin: 0 0 0.5rem 0
+}
+#parallax {
+  position: absolute;
+  object-fit: cover;
+  width: 100vw;
+  height: 100vh;
+  background-image: url('../public/jeremy-perkins-unsplash.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-position: 50% 50%;
+  z-index: -1;
+  opacity: 0.5;
 }

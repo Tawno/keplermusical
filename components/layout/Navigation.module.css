@@ -1,0 +1,41 @@
+@keyframes drop {
+  from {transform: skewY(0);}
+   to {
+    transform: skewY(1);
+   }
+}
+.header {
+  margin: 1rem;
+ 
+  color:#f3f3f3;
+}
+.header ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  margin: 0 5rem ;
+  width: calc(100% - 200px);
+}
+.header ul li{
+padding: 1rem;
+}
+.header ul li a:hover {
+    border-bottom: 2px solid lightgrey;
+}
+.header .songlist {
+  display:none;
+  flex-direction: column;
+  position: absolute;
+  width: auto;
+  top: 4rem;
+  left:13.25rem;
+}
+.header .songlist li {
+  padding: 0.4rem;
+  background-color:#333 ;
+}
+
+.songButton:hover .songlist{
+  animation: drop 0.2s ease-in 0s forwards;
+  display: flex;
+}
