@@ -13,23 +13,9 @@ function Navigation() {
           <li>
             <Link href='/themusical'>The Musical</Link>
           </li>
-          <li className={classes.songButton}>
-            <a>Songs</a><ul className={classes.songlist}>
-      <li>
-        <Link href='/songs/songTemp'>NAKED EYE </Link>
-      </li>
-      <li>
-        <Link href='/songs/songTemp'>MAIN THEME</Link>
-      </li>
-      <li>
-        <Link href='/songs/songTemp'>CAPRICORN </Link>
-      </li>
-      <li>
-        <Link href='/songs/songTemp'>A SICKLY CHILD</Link>
-      </li>
-          </ul>
+          <li>
+          <Link href='/songs'>Songs </Link>
           </li>
-          
           <li>
             <Link href='/about'>About</Link>
           </li>

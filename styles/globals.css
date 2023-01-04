@@ -1,17 +1,27 @@
-html { background-color: #333;}
+/* @font-face {
+  font-family: 'Segoeui';
+  src: url('../public/fonts/segoeui.woff2');
+} */
+html { background-color: #191919;}
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+  font-family:-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
-
+h1 {
+  /* font-family: var(--playfair-font);  */
+font-size: 82pt;
+}
 a {
   color: inherit;
   text-decoration: none;
 }
-
+p {
+  line-height: 1.25;
+  margin:1.25rem 0
+}
 * {
   box-sizing: border-box;
   color: #f2f2f2;
@@ -19,10 +29,21 @@ a {
 .card {
   font-size: 16px;
   padding:0.5rem 1.5rem 0.5rem 0;
-  width: 50%;
+  width: 100%;
+}
+iframe {
+  margin:0.5rem 0;
+}
+a.readMore {
+font-weight: 400;
+padding-bottom: 0.2rem;
+border-bottom: 1px solid rgba(211, 211, 211, 0.5);
+}
+a.readMore:hover {
+  border-bottom: 1px solid rgba(250, 250, 250, 0.849);
 }
 h3 {
-  margin: 0 0 0.5rem 0
+  margin: 0 0 0.5rem;
 }
 #parallax {
   position: absolute;

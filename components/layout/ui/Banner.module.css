@@ -1,0 +1,14 @@
+.banner {
+  width: 50rem;
+  height: 18rem;
+  background-color: rgb(190, 190, 190);
+  overflow: hidden;
+  margin: 0rem auto 2rem;
+}
+.banner img {
+  object-position:50% 68%;
+  /* height: auto; */
+  object-fit: cover;
+  width: 100%;
+ 
+}

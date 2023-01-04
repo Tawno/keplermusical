@@ -1,5 +1,6 @@
 module.exports = {
-  reactStrictMode: true,
+  // basePath:'',
+  reactStrictMode: false,
   distDir: 'build',
   exportPathMap: async function (
     defaultPathMap,
@@ -10,6 +11,11 @@ module.exports = {
       '/about': { page: '/about' },
       '/contact': { page: '/contact' },
       '/themusical': { page: '/themusical' },
+      './songs' : {page: '/songs'}
     }
-  },
+   }
+  // , webpack(config) {
+  //   delete config.resolve.alias.url;
+  //   return config;
+  // }
 }

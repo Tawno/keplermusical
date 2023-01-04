@@ -1,7 +1,8 @@
 import Head from 'next/head'
 import Card from '../components/layout/ui/Card'
 import { Fragment } from 'react'
-
+import Banner from '../components/layout/ui/Banner'
+import Image from 'next/image'
 function About() {
   return (
     <Fragment>
@@ -10,6 +11,7 @@ function About() {
         <meta name="description" content="musical about kepler" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
+      <Banner><Image src="/../public/telescope-frontimg.jpg" alt="drawing of an old telescope" width="640" height="343" style={{objectPosition: '48% 123%' }}/></Banner>
       <Card>
         <b>About the Composer/Lyricist:</b>
         <p>

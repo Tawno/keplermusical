@@ -75,6 +75,3 @@
   /* transform: rotate(90deg); */
   animation: rotat 0.2s ease-in 0s forwards;
 }
-.container p {
-  margin: 0 0 0.5rem 0;
-}
