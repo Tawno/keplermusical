@@ -14,7 +14,8 @@ function TheMusical() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
     <Banner><Image src="/../public/natalie-parham-yHlD13IaUEo.jpg" alt="drawing of an old telescope" width="800" height="343" style={{objectPosition: '50% 20%'}}/></Banner>
-      <main className={styles.container}>  
+      <main className={styles.container}> <h2>
+        The Musical</h2> 
       <Card><p>
       Set in late 16th/early 17th century Europe, an era of superstition, ignorance, plague and religious tyranny, the brilliant young Kepler, part-dreamer, part-explorer, emerges from a miserable and sickly childhood in obsessive pursuit of an idea which would eventually change mankind’s concept of the heavens and lay the foundations of Modern Astronomy.
 </p><p>

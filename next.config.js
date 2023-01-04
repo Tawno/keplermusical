@@ -1,5 +1,4 @@
 module.exports = {
-  // basePath:'',
   reactStrictMode: false,
   distDir: 'build',
   exportPathMap: async function (

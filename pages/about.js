@@ -13,7 +13,7 @@ function About() {
       </Head>
       <Banner><Image src="/../public/telescope-frontimg.jpg" alt="drawing of an old telescope" width="640" height="343" style={{objectPosition: '48% 123%' }}/></Banner>
       <Card>
-        <b>About the Composer/Lyricist:</b>
+        <h2>About the Composer/Lyricist:</h2>
         <p>
           Nick Pallett spent many years as a professional musician-singer,
           songwriter & band-member, touring & recording all over the UK, in
