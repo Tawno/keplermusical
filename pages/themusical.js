@@ -4,6 +4,7 @@ import styles from './themusical.module.css'
 import Image from 'next/image'
 import Banner from '../components/layout/ui/Banner'
 import Card from '../components/layout/ui/Card'
+import Link from 'next/link'
 
 function TheMusical() {
   return (
@@ -25,7 +26,11 @@ It is the story of triumph-over-adversity, a life and career hampered by persona
  </p><p>
 The extraordinary life of this reckless genius and his immortal achievements, attained as much via the comic-tragic twists and turns of fate as through his own singular determination, are here, musically and dramatically portrayed.
             </p>                                                                                                           
-      </Card>
+      </Card><div className={'readMoreCont'}>
+            <Link href="/scriptsample" className={` readMore`}>
+              View script sample
+            </Link>
+          </div>
         </main>
     </Fragment>
   )

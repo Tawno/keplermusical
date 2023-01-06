@@ -10,7 +10,8 @@ module.exports = {
       '/about': { page: '/about' },
       '/contact': { page: '/contact' },
       '/themusical': { page: '/themusical' },
-      './songs' : {page: '/songs'}
+      './songs' : {page: '/songs'},
+      './scriptsample' : {page: '/sciptsample'}
     }
    }
   // , webpack(config) {

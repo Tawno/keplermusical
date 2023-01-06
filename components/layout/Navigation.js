@@ -1,30 +1,43 @@
 import Link from 'next/link'
 
-import classes from './Navigation.module.css';
+import styles from './Navigation.module.css'
+import Image from 'next/image'
+import { useState } from 'react'
+
+const links = [
+  { href: '/', label: 'Home' },
+  { href: '/themusical', label: 'The Musical' },
+  { href: '/songs', label: 'Songs' },
+  { href: '/about', label: 'About' },
+  { href: '/contact', label: 'Contact' },
+]
 
 function Navigation() {
-
+  const [isActive, setActive] = useState('false')
+  const ToggleClass = () => {
+    setActive(!isActive)
+  }
   return (
-    <header className={classes.header}>
-        <ul>
-          <li>
-            <Link href='/'>Home</Link>
+    <header className={styles.header}>
+      <div className={styles.menuButton} onClick={ToggleClass}>
+        <Image className={isActive ? styles['inactive'] : styles['active']}
+          src="/mobile-button-01.svg"
+          width="40"
+          height="40"
+          alt="mobile button"
+        ></Image>
+      </div>
+      <ul className={isActive ? styles['inactive'] : styles['active']}>
+        {links.map((link) => (
+          <li   key={link.href} >
+            <Link onClick={ToggleClass} href={link.href}>
+              {link.label}
+            </Link>
           </li>
-          <li>
-            <Link href='/themusical'>The Musical</Link>
-          </li>
-          <li>
-          <Link href='/songs'>Songs </Link>
-          </li>
-          <li>
-            <Link href='/about'>About</Link>
-          </li>
-          <li>
-            <Link href='/contact'>Contact</Link>
-          </li>
-        </ul>
+        ))}
+      </ul>
     </header>
-  );
+  )
 }
 
-export default Navigation;
+export default Navigation

@@ -71,13 +71,13 @@ margin:auto
   justify-content: center;
   margin:  1rem 0 0 0;
 }
-.continueReading {
-text-align: center;
-width: 100%;
-}
-@media (max-width: 600px) {
+
+@media screen and (max-width: 600px) {
   .grid {
-    width: 100%;
+    width: auto;
     flex-direction: column;
+  }
+  .container h1 {
+    width: auto;
   }
 }

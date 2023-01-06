@@ -1,7 +1,6 @@
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
 import Card from '../components/layout/ui/Card'
-import Script from 'next/script'
 import Link from 'next/link'
 import Block2x1 from '../components/layout/ui/Block2x1'
 import Soundcloud from '../components/layout/embed/soundcloud'
@@ -33,7 +32,7 @@ export default function Home() {
             change mankind’s concept of the heavens and lay the foundations of
             Modern Astronomy.
           </p>
-          <div className={styles.continueReading}>
+          <div className={'readMoreCont'}>
             <Link href="/themusical" className={` readMore`}>
               Continue reading
             </Link>
@@ -48,7 +47,7 @@ export default function Home() {
             }
             href="https://soundcloud.com/nick-pallett/something-i-saw"
             title={'Something I Saw'}
-            description="Short descript of this track"
+            description="Short descript of this track and where the song would appear in the play etc etc"
           >
             {' '}
             descriptions
@@ -59,6 +58,7 @@ export default function Home() {
             }
             href="https://soundcloud.com/nick-pallett/naked-eye-1"
             title={'Naked Eye 1'}
+            description="Short descript of this track and where the song would appear in the play etc etc"
           />
         </Block2x1>
       </main>

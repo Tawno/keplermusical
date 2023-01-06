@@ -1,0 +1,29 @@
+.scriptSheet {
+  background-color: rgb(255, 253, 243);
+  min-height: 20rem;
+  padding: 1rem 2rem;
+  width: 100%;
+  margin-bottom: 2rem;
+}
+.scriptSheet p, .scriptSheet h2, .scriptSheet span {
+  color:black;
+  display: block;
+  margin-right:1rem;
+  font-family: var(--courier-font) !important;
+}
+.scriptSheet span {
+  min-width: 15%;
+  text-align: right;
+}
+.scriptSheet p {
+   width: 50%;
+}
+.scriptSheet h2 {
+  margin-bottom: 2rem;
+}
+.scriptSheet div { 
+  padding:0 0 1rem 0em;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
